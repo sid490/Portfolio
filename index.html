@@ -1685,7 +1685,12 @@
   <div class="bg-gradient-to-r from-blue-300 to-white h-1/2"></div>
   <header class="w-full py-4 px-6 flex justify-between items-center">
     <h1 class="text-xl font-bold text-black">Shubham Mukherjee</h1>
-    <nav class="flex space-x-4">
+    <!-- Hamburger Menu Button -->
+    <button id="menu-toggle" class="block md:hidden px-4 py-2 bg-blue-500 text-white rounded-lg">
+      <i class="fas fa-bars"></i>
+    </button>
+    <!-- Navigation Links -->
+    <nav id="menu" class="hidden md:flex space-x-4">
       <a href="#about" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
         <i class="fas fa-user"></i> About
       </a>
@@ -2051,6 +2056,12 @@
         ease: "power2.out", // Smooth easing
         stagger: 0.3, // Stagger animation for grid items
       });
+    });
+  </script>
+  <script>
+    document.getElementById("menu-toggle").addEventListener("click", function () {
+      const menu = document.getElementById("menu");
+      menu.classList.toggle("hidden");
     });
   </script>
 

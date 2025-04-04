@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shubham Mukherjee - Resume</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -855,12 +854,12 @@
 
     .main {
       position: absolute;
-      bottom: 2%;
+      bottom: 3%;
       left: 25%;
       transform: translateX(-50%);
       width: 50%;
       /* Reduced from 100% */
-      height: 3vmax;
+      height: 5vmax;
       /* Reduced from 10vmax */
       display: flex;
       justify-content: center;
@@ -1658,7 +1657,7 @@
     }
 
     #about p {
-      font-size: 1.25rem;
+      font-size: 1.125rem;
       /* Slightly larger font for readability */
       line-height: 1.75;
       /* Improves readability */
@@ -1787,7 +1786,7 @@
     <main class="flex-grow container mx-auto px-8 py-12">
       <section id="about" class="flex items-center justify-center min-h-screen">
         <div class="container mx-auto text-center">
-          <h2 class="text-3xl font-bold text-gray-800 mb-6 font-size: 2.5rem">About Me</h2>
+          <h2 class="text-3xl font-bold text-gray-800 mb-6" style="font-size: 2.5rem;">About Me</h2>
           <p id="about-text" class="text-gray-700 text-lg max-w-3xl mx-auto leading-relaxed">
             Highly motivated and detail-oriented Associate with experience in employee service and support. Strong
             ability to multitask and prioritize tasks, with excellent communication, problem-solving, and data
@@ -1797,12 +1796,6 @@
             with sensitive information.
           </p>
         </div>
-        <!-- Animated Dog -->
-
-        <dotlottie-player src="https://lottie.host/4e014d51-e62f-4477-be09-3aedd4bcaa05/sUzsMS9avR.lottie"
-          background="transparent" speed="1" style="width: 300px; height: 300px; position: absolute; top: 0; right: 5%;"
-          loop autoplay>
-        </dotlottie-player>
       </section>
 
       <section id="experience" class="py-16">
@@ -1830,7 +1823,7 @@
         </div>
       </section>
 
-      <section id="projects" class="py-16 top:1rem; bottom:1rem">
+      <section id="projects" class="py-16" style="margin-top: 1rem; margin-bottom: 1rem;">
         <h2 style="font-size: 2.5rem;">Projects</h2>
         <div class="mt-12 grid md:grid-cols-1 gap-8">
           <div class="grid-item bg-gradient-to-r from-white via-pink-100 to-blue-200 p-6 rounded-lg shadow-lg">
@@ -1855,7 +1848,7 @@
         </div>
       </section>
 
-      <section id="education" class="py-16 top:1rem; bottom:1rem;">
+      <section id="education" class="py-16" style="margin-top: 1rem; margin-bottom: 1rem;">
         <h2 style="font-size: 2.5rem; top: 1rem;">Education</h2>
         <div class="mt-12 grid md:grid-cols-4 gap-8">
           <div class="grid-item bg-gradient-to-r from-white via-pink-100 to-blue-200 p-6 rounded-lg shadow-lg">
@@ -2017,16 +2010,6 @@
       </a>
       <a href="resume.pdf" download class="px-4 py-2 bg-gray-700 text-white rounded-lg mx-2 hover:bg-gray-800">
         <i class="fas fa-download"></i> Resume
-      </a>
-      <!-- Email Button -->
-      <a href="mailto:shubhammukherjee490@gmail.com"
-        class="px-4 py-2 bg-red-500 text-white rounded-lg mx-2 hover:bg-red-600">
-        <i class="fas fa-envelope"></i> Email Me
-      </a>
-      <!-- Phone Button -->
-      <a href="tel:+919958893975"
-        class="px-4 py-2 bg-blue-700 text-white rounded-lg mx-2 hover:bg-blue-800">
-        <i class="fas fa-phone"></i> Call Me
       </a>
     </div>
   </footer>

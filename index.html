@@ -1,2069 +1,493 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shubham Mukherjee - Resume</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shubham Mukherjee | HR Professional</title>
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Cactus+Classical+Serif&family=Doto:wght@100..900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    *,
-    *:after,
-    *:before {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
 
-    html {
-      background: #f4f4f4;
-      text-rendering: optimizeLegibility;
-      line-height: 1.5em;
-      font-family: "Montserrat", sans-serif;
-      font-size: 14px;
-      -webkit-text-size-adjust: 100%;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-
-    body {
-      font-family: 'Cactus Classical Serif', serif;
-      /* Apply Annie Use Your Telescope font */
-      background: #f4f4f4;
-      color: #333;
-      font-size: 14px;
-      line-height: 1.5em;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    section {
-      position: relative;
-      padding: 60px 0;
-    }
-
-    .container {
-      position: relative;
-      margin: auto;
-      padding: 0 30px;
-      width: 100%;
-      max-width: 1170px;
-    }
-
-    .small-container {
-      position: relative;
-      margin: auto;
-      width: 100%;
-      max-width: 870px;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    blockquote,
-    ul {
-      margin-bottom: 1rem;
-      -ms-word-break: break-word;
-      -ms-word-wrap: break-word;
-      -webkit-word-break: break-word;
-      -webkit-word-wrap: break-word;
-      word-break: break-word;
-      word-wrap: break-word;
-    }
-
-    h1:last-child,
-    h2:last-child,
-    h3:last-child,
-    h4:last-child,
-    h5:last-child,
-    h6:last-child,
-    p:last-child,
-    blockquote:last-child,
-    ul:last-child {
-      margin-bottom: 0;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      line-height: 1.25em;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
-
-    h1:not(:first-child),
-    h2:not(:first-child),
-    h3:not(:first-child),
-    h4:not(:first-child),
-    h5:not(:first-child),
-    h6:not(:first-child) {
-      margin-top: 1.5em;
-    }
-
-    h1 {
-      font-size: 3em;
-    }
-
-    h2 {
-      font-family: 'Doto', monospace;
-      /* Apply Doto font */
-      font-size: 2.5rem;
-      /* Adjusts heading size */
-      font-weight: bold;
-      /* Makes the text bold */
-      color: #333;
-      /* Dark gray for better contrast */
-      margin-bottom: 1rem;
-      /* Reduces spacing below the heading */
-      text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
-      /* Adds a subtle shadow */
-    }
-
-    h3 {
-      font-family: 'Cactus Classical Serif', serif;
-      /* Apply Cactus Classical Serif font */
-      font-weight: 700;
-      /* Makes the text bold */
-      font-size: 1.75rem;
-      /* Adjusts heading size */
-      color: #333;
-      /* Dark gray for better contrast */
-      margin-bottom: 1rem;
-      /* Adds spacing below the heading */
-    }
-
-    p {
-      font-family: 'Cactus Classical Serif', serif;
-      /* Apply Annie Use Your Telescope font */
-      font-size: 1rem;
-      /* Adjusts paragraph size */
-      color: #555;
-      /* Medium gray for readability */
-      line-height: 1.6;
-      /* Improves readability */
-      margin-bottom: 1rem;
-      /* Adds spacing below the paragraph */
-    }
-
-    .animations {
-      display: table;
-      background: #ffffff;
-      padding: 200px 0;
-      min-height: 100vh;
-      width: 100%;
-      text-align: center;
-    }
-
-    .animations .animations-container {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .animations .container {
-      display: table-cell;
-      vertical-align: middle;
-    }
-
-    .animations .container .small-container {
-      max-width: 480px;
-    }
-
-    .ani {
-      position: absolute;
-    }
-
-    .ani.ani-1 {
-      left: 30px;
-      top: 30px;
-      transform: scale(0.8);
-    }
-
-    .ani.ani-2 {
-      right: 25%;
-      top: 50px;
-      transform: scale(0.6);
-    }
-
-    .ani.ani-3 {
-      right: 100px;
-      bottom: 100px;
-      transform: translate(50%, 50%) scale(0.8);
-    }
-
-    .ani.ani-4 {
-      bottom: 98px;
-      left: 15%;
-    }
-
-    .ani.ani-5 {
-      left: 30px;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-
-    .ani.ani-6 {
-      height: 320px;
-      width: 320px;
-      right: 0;
-      top: 0;
-    }
-
-    .ani-cube {
-      perspective: 20000px;
-      height: 100px;
-      width: 100px;
-      transform-style: preserve-3d;
-      transform: rotateX(-30deg) rotateY(40deg) rotateZ(360deg);
-      -webkit-animation: ani-cube-1 20s linear infinite;
-      animation: ani-cube-1 20s linear infinite;
-    }
-
-    .ani-cube .cube-face {
-      position: absolute;
-      left: 0px;
-      top: 0px;
-      width: 100px;
-      height: 100px;
-    }
-
-    .ani-cube .cube-face.face_front {
-      background-color: #3496d2;
-      transform: translate3d(0px, 0px, 50px);
-      z-index: 10;
-    }
-
-    .ani-cube .cube-face.face_right {
-      background-color: #6fb9e8;
-      transform: rotateX(0deg) rotateY(90deg) rotateZ(0deg) translate3d(0px, 0px, 50px);
-      z-index: 8;
-    }
-
-    .ani-cube .cube-face.face_left {
-      background-color: #6fb9e8;
-      transform: rotateX(0deg) rotateY(-90deg) rotateZ(0deg) translate3d(0px, 0px, 50px);
-      z-index: 9;
-    }
-
-    .ani-cube .cube-face.face_top {
-      background-color: #4cace8;
-      transform: rotateX(90deg) rotateY(0deg) rotateZ(0deg) translate3d(0px, 0px, 50px);
-      z-index: 11;
-    }
-
-    .ani-cube .cube-face.face_bottom {
-      background-color: #4cace8;
-      transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg) translate3d(0px, 0px, 50px);
-      z-index: 5;
-    }
-
-    .ani-cube .cube-face.face_back {
-      background-color: #3496d2;
-      transform: translate3d(0px, 0px, -50px);
-      z-index: 1;
-    }
-
-    .ani-cube.ani-cube-2 {
-      height: 40px;
-      transform: rotateX(143deg) rotateY(50deg) rotateZ(360deg);
-      -webkit-animation: ani-cube-2 10s linear infinite;
-      animation: ani-cube-2 10s linear infinite;
-    }
-
-    .ani-cube.ani-cube-2 .cube-face.face_front {
-      height: 40px;
-      transform: translate3d(0px, 0px, 100px);
-    }
-
-    .ani-cube.ani-cube-2 .cube-face.face_right {
-      width: 200px;
-      height: 40px;
-      transform: rotateX(0deg) rotateY(90deg) rotateZ(0deg) translate3d(0px, 0px, 0);
-    }
-
-    .ani-cube.ani-cube-2 .cube-face.face_left {
-      width: 200px;
-      height: 40px;
-      transform: rotateX(0deg) rotateY(-90deg) rotateZ(0deg) translate3d(0px, 0px, 100px);
-    }
-
-    .ani-cube.ani-cube-2 .cube-face.face_top {
-      height: 200px;
-      transform: rotateX(90deg) rotateY(0deg) rotateZ(0deg) translate3d(0px, 0px, 60px);
-    }
-
-    .ani-cube.ani-cube-2 .cube-face.face_bottom {
-      height: 200px;
-      transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg) translate3d(0px, 0px, -100px);
-    }
-
-    .ani-cube.ani-cube-2 .cube-face.face_back {
-      height: 40px;
-      transform: translate3d(0px, 0px, -100px);
-    }
-
-    .ani-cube.ani-cube-3 {
-      transform: scale(0.6) rotateX(-63deg) rotateY(13deg) rotateZ(47deg);
-      -webkit-animation: ani-cube-3 20s cubic-bezier(0.7, 0, 0.7, 1) infinite;
-      animation: ani-cube-3 20s cubic-bezier(0.7, 0, 0.7, 1) infinite;
-    }
-
-    .ani-cube.ani-cube-3 .cube-face.face_front,
-    .ani-cube.ani-cube-3 .cube-face.face_right,
-    .ani-cube.ani-cube-3 .cube-face.face_left,
-    .ani-cube.ani-cube-3 .cube-face.face_top,
-    .ani-cube.ani-cube-3 .cube-face.face_bottom,
-    .ani-cube.ani-cube-3 .cube-face.face_back {
-      border: 2px solid #3496d2;
-      border-radius: 2px;
-      background-color: transparent;
-      box-shadow: inset 0 0 0 2px #3496d2, 0 0 0 2px #3496d2;
-    }
-
-    .ani-hamburger {
-      height: 19px;
-      width: 30px;
-      -webkit-animation: rotate90 4s cubic-bezier(0.7, 0, 0.7, 1) infinite;
-      animation: rotate90 4s cubic-bezier(0.7, 0, 0.7, 1) infinite;
-    }
-
-    .ani-hamburger .hamburger-line {
-      position: absolute;
-      background-color: #3496d2;
-      height: 2px;
-      width: 100%;
-      left: 0;
-      transform-origin: center;
-    }
-
-    .ani-hamburger .hamburger-line.hamburger-line_top {
-      top: 0;
-      -webkit-animation: hamburger-line_top 4s cubic-bezier(0.7, 0, 0.7, 1) infinite;
-      animation: hamburger-line_top 4s cubic-bezier(0.7, 0, 0.7, 1) infinite;
-    }
-
-    .ani-hamburger .hamburger-line.hamburger-line_middle {
-      top: 50%;
-      -webkit-animation: hamburger-line_middle 4s cubic-bezier(0.7, 0, 0.7, 1) infinite;
-      animation: hamburger-line_middle 4s cubic-bezier(0.7, 0, 0.7, 1) infinite;
-    }
-
-    .ani-hamburger .hamburger-line.hamburger-line_bottom {
-      top: 100%;
-      -webkit-animation: hamburger-line_bottom 4s cubic-bezier(0.7, 0, 0.7, 1) infinite;
-      animation: hamburger-line_bottom 4s cubic-bezier(0.7, 0, 0.7, 1) infinite;
-    }
-
-    .moving-square-frame {
-      position: absolute;
-      height: 20px;
-      width: 20px;
-      top: 10px;
-      left: 10px;
-      opacity: 0.1;
-      border: 1px solid #000;
-    }
-
-    .ani-moving-square {
-      background: #3496d2;
-      height: 20px;
-      width: 20px;
-      -webkit-animation: ani-moving-square 6s cubic-bezier(0.7, 0, 0.7, 1) infinite;
-      animation: ani-moving-square 6s cubic-bezier(0.7, 0, 0.7, 1) infinite;
-    }
-
-    svg {
-      height: 100%;
-      width: 100%;
-    }
-
-    svg #followPath {
-      fill: none;
-      stroke: #3496d2;
-      stroke-width: 8;
-      stroke-dasharray: 2870px;
-      stroke-dashoffset: 2870px;
-      -webkit-animation: drawPath 6s linear infinite;
-      animation: drawPath 6s linear infinite;
-    }
-
-    svg #dashedPath {
-      fill: none;
-      stroke: #fff;
-      stroke-width: 14;
-      stroke-dasharray: 50px;
-    }
-
-    svg #airplain {
-      fill: #3496d2;
-      transform: translate(-10px, -45px);
-    }
-
-    @-webkit-keyframes ani-cube-1 {
-      to {
-        transform: rotateX(-30deg) rotateY(40deg) rotateZ(0);
-      }
-    }
-
-    @keyframes ani-cube-1 {
-      to {
-        transform: rotateX(-30deg) rotateY(40deg) rotateZ(0);
-      }
-    }
-
-    @-webkit-keyframes ani-cube-2 {
-      to {
-        transform: rotateX(143deg) rotateY(50deg) rotateZ(0);
-      }
-    }
-
-    @keyframes ani-cube-2 {
-      to {
-        transform: rotateX(143deg) rotateY(50deg) rotateZ(0);
-      }
-    }
-
-    @-webkit-keyframes ani-cube-3 {
-      0% {
-        transform: scale(0.6) rotateX(-63deg) rotateY(13deg) rotateZ(47deg);
-      }
-
-      5%,
-      15%,
-      25%,
-      35%,
-      45%,
-      55%,
-      65%,
-      75%,
-      85%,
-      95% {
-        transform: scale(0.8) rotateX(-63deg) rotateY(-23deg) rotateZ(47deg);
-      }
-
-      10%,
-      20%,
-      30%,
-      40%,
-      50%,
-      60%,
-      70%,
-      80%,
-      90% {
-        transform: scale(0.6) rotateX(-63deg) rotateY(13deg) rotateZ(47deg);
-      }
-
-      100% {
-        transform: scale(0.6) rotateX(-63deg) rotateY(13deg) rotateZ(407deg);
-      }
-    }
-
-    @keyframes ani-cube-3 {
-      0% {
-        transform: scale(0.6) rotateX(-63deg) rotateY(13deg) rotateZ(47deg);
-      }
-
-      5%,
-      15%,
-      25%,
-      35%,
-      45%,
-      55%,
-      65%,
-      75%,
-      85%,
-      95% {
-        transform: scale(0.8) rotateX(-63deg) rotateY(-23deg) rotateZ(47deg);
-      }
-
-      10%,
-      20%,
-      30%,
-      40%,
-      50%,
-      60%,
-      70%,
-      80%,
-      90% {
-        transform: scale(0.6) rotateX(-63deg) rotateY(13deg) rotateZ(47deg);
-      }
-
-      100% {
-        transform: scale(0.6) rotateX(-63deg) rotateY(13deg) rotateZ(407deg);
-      }
-    }
-
-    @-webkit-keyframes rotate90 {
-      0% {
-        transform: rotate(0);
-      }
-
-      5%,
-      50% {
-        transform: rotate(-90deg);
-      }
-
-      55%,
-      100% {
-        transform: rotate(0);
-      }
-    }
-
-    @keyframes rotate90 {
-      0% {
-        transform: rotate(0);
-      }
-
-      5%,
-      50% {
-        transform: rotate(-90deg);
-      }
-
-      55%,
-      100% {
-        transform: rotate(0);
-      }
-    }
-
-    @-webkit-keyframes hamburger-line_top {
-      0% {
-        top: 0;
-        transform: rotate(0);
-      }
-
-      5%,
-      50% {
-        top: 50%;
-        transform: rotate(45deg);
-      }
-
-      55%,
-      100% {
-        top: 0;
-        transform: rotate(0);
-      }
-    }
-
-    @keyframes hamburger-line_top {
-      0% {
-        top: 0;
-        transform: rotate(0);
-      }
-
-      5%,
-      50% {
-        top: 50%;
-        transform: rotate(45deg);
-      }
-
-      55%,
-      100% {
-        top: 0;
-        transform: rotate(0);
-      }
-    }
-
-    @-webkit-keyframes hamburger-line_middle {
-      0% {
-        opacity: 1;
-      }
-
-      5%,
-      50% {
-        opacity: 0;
-      }
-
-      55%,
-      100% {
-        opacity: 1;
-      }
-    }
-
-    @keyframes hamburger-line_middle {
-      0% {
-        opacity: 1;
-      }
-
-      5%,
-      50% {
-        opacity: 0;
-      }
-
-      55%,
-      100% {
-        opacity: 1;
-      }
-    }
-
-    @-webkit-keyframes hamburger-line_bottom {
-      0% {
-        top: 100%;
-        transform: rotate(0);
-      }
-
-      5%,
-      50% {
-        top: 50%;
-        transform: rotate(-45deg);
-      }
-
-      55%,
-      100% {
-        top: 100%;
-        transform: rotate(0);
-      }
-    }
-
-    @keyframes hamburger-line_bottom {
-      0% {
-        top: 100%;
-        transform: rotate(0);
-      }
-
-      5%,
-      50% {
-        top: 50%;
-        transform: rotate(-45deg);
-      }
-
-      55%,
-      100% {
-        top: 100%;
-        transform: rotate(0);
-      }
-    }
-
-    @-webkit-keyframes ani-moving-square {
-
-      0%,
-      2.5% {
-        transform: translate(0, 0);
-      }
-
-      10%,
-      15% {
-        transform: translate(20px, 0);
-      }
-
-      22.5%,
-      27.5% {
-        transform: translate(20px, 20px);
-      }
-
-      35%,
-      40% {
-        transform: translate(0, 20px);
-      }
-
-      47.5%,
-      52.5% {
-        transform: translate(0, 0);
-      }
-
-      60%,
-      65% {
-        transform: translate(0, 20px);
-      }
-
-      72.5%,
-      77.5% {
-        transform: translate(20px, 20px);
-      }
-
-      85%,
-      90% {
-        transform: translate(20px, 0);
-      }
-
-      97.5%,
-      100% {
-        transform: translate(0, 0);
-      }
-    }
-
-    @keyframes ani-moving-square {
-
-      0%,
-      2.5% {
-        transform: translate(0, 0);
-      }
-
-      10%,
-      15% {
-        transform: translate(20px, 0);
-      }
-
-      22.5%,
-      27.5% {
-        transform: translate(20px, 20px);
-      }
-
-      35%,
-      40% {
-        transform: translate(0, 20px);
-      }
-
-      47.5%,
-      52.5% {
-        transform: translate(0, 0);
-      }
-
-      60%,
-      65% {
-        transform: translate(0, 20px);
-      }
-
-      72.5%,
-      77.5% {
-        transform: translate(20px, 20px);
-      }
-
-      85%,
-      90% {
-        transform: translate(20px, 0);
-      }
-
-      97.5%,
-      100% {
-        transform: translate(0, 0);
-      }
-    }
-
-    @-webkit-keyframes drawPath {
-      0% {
-        opacity: 1;
-        stroke-dashoffset: 2870px;
-      }
-
-      53% {
-        opacity: 1;
-        stroke-dashoffset: 0;
-      }
-
-      78% {
-        opacity: 0;
-      }
-
-      100% {
-        opacity: 0;
-        stroke-dashoffset: 0;
-      }
-    }
-
-    @keyframes drawPath {
-      0% {
-        opacity: 1;
-        stroke-dashoffset: 2870px;
-      }
-
-      53% {
-        opacity: 1;
-        stroke-dashoffset: 0;
-      }
-
-      78% {
-        opacity: 0;
-      }
-
-      100% {
-        opacity: 0;
-        stroke-dashoffset: 0;
-      }
-    }
-
-    @media (max-width: 1023px) {
-      .ani.ani-1 {
-        transform: scale(0.5);
-      }
-
-      .ani.ani-2 {
-        top: 120px;
-        transform: scale(0.3);
-      }
-
-      .ani.ani-5 {
-        top: 80%;
-      }
-
-      .ani.ani-6 {
-        max-height: 30vw;
-        max-width: 30vw;
-        max-height: 140px;
-        max-width: 140px;
-      }
-    }
-
-    @media (max-width: 767px) {
-      .ani.ani-1 {
-        transform: scale(0.4);
-      }
-
-      .ani.ani-2 {
-        top: 100px;
-        transform: scale(0.3);
-      }
-
-      .ani.ani-5 {
-        top: 80%;
-      }
-
-      .ani.ani-6 {
-        max-height: 30vw;
-        max-width: 30vw;
-        max-height: 140px;
-        max-width: 140px;
-      }
-    }
-
-    .grid-item {
-      background: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 182, 193, 0.5), rgba(52, 150, 210, 0.5));
-      /* Transparent gradient */
-      padding: 6px;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      backdrop-filter: blur(5px);
-      /* Optional: Adds a subtle blur effect */
-    }
-
-    *,
-    *::after,
-    *::before {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      user-select: none;
-    }
-
-    /* Generic */
-
-    .main {
-      position: absolute;
-      bottom: 3%;
-      left: 25%;
-      transform: translateX(-50%);
-      width: 50%;
-      /* Reduced from 100% */
-      height: 5vmax;
-      /* Reduced from 10vmax */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transform-origin: center;
-      transform: scale(0.7);
-      /* Scales down the entire container */
-    }
-
-    .leg {
-      position: absolute;
-      bottom: 0;
-      width: 3vmax;
-      height: 4.125vmax;
-    }
-
-    .paw {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 3.75vmax;
-      height: 1.875vmax;
-      overflow: hidden;
-    }
-
-    .paw::before {
-      content: "";
-      position: absolute;
-      width: 3.75vmax;
-      height: 3.75vmax;
-      border-radius: 50%;
-    }
-
-    .top {
-      position: absolute;
-      bottom: 0;
-      left: 0.75vmax;
-      height: 4.5vmax;
-      width: 2.625vmax;
-      border-top-left-radius: 1.425vmax;
-      border-top-right-radius: 1.425vmax;
-      transform-origin: bottom right;
-      transform: rotateZ(90deg) translateX(-0.1vmax) translateY(1.5vmax);
-      z-index: -1;
-      background-image: linear-gradient(70deg, transparent 20%, #ff8b56 20%);
-    }
-
-    .dog {
-      position: relative;
-      width: 22.5vmax;
-      height: 8.25vmax;
-    }
-
-    .dog::before {
-      content: "";
-      position: absolute;
-      bottom: -0.75vmax;
-      right: -0.15vmax;
-      width: 100%;
-      height: 1.5vmax;
-      background-color: rgba(28, 49, 48, 0.1);
-      border-radius: 50%;
-      z-index: -1000;
-      animation: shadow 10s cubic-bezier(0.3, 0.41, 0.18, 1.01) infinite;
-    }
-
-    .dog__head {
-      position: absolute;
-      left: 1.5vmax;
-      bottom: 0;
-      width: 9.75vmax;
-      height: 8.25vmax;
-      border-top-left-radius: 4.05vmax;
-      border-top-right-radius: 4.05vmax;
-      border-bottom-right-radius: 3.3vmax;
-      border-bottom-left-radius: 3.3vmax;
-      background-color: #b0b0b0;
-      /* Gray for the husky's head */
-      background-image: linear-gradient(to bottom, #b0b0b0 40%, #ffffff 40%, #d1e8ff 60%);
-      /* Gray top, white middle, light blue bottom */
-      animation: head 10s cubic-bezier(0.3, 0.41, 0.18, 1.01) infinite;
-    }
-
-    .dog__head-c {
-      position: absolute;
-      left: 1.5vmax;
-      bottom: 0;
-      width: 9.75vmax;
-      height: 8.25vmax;
-      animation: head 10s cubic-bezier(0.3, 0.41, 0.18, 1.01) infinite;
-      z-index: -1;
-      background-color: #b0b0b0;
-      /* Match the head color */
-    }
-
-    .dog__snout {
-      position: absolute;
-      left: -1.5vmax;
-      bottom: 0;
-      width: 7.5vmax;
-      height: 3.75vmax;
-      border-top-right-radius: 3vmax;
-      border-bottom-right-radius: 3vmax;
-      border-bottom-left-radius: 4.5vmax;
-      background-color: #ffffff;
-      /* White snout */
-      background-image: linear-gradient(to bottom, #ffffff 70%, #ffd1e8 30%);
-      /* White top, light pink bottom */
-      animation: snout 10s cubic-bezier(0.3, 0.41, 0.18, 1.01) infinite;
-    }
-
-    .dog__snout::before {
-      content: "";
-      position: absolute;
-      left: -0.1125vmax;
-      top: -0.15vmax;
-      width: 1.875vmax;
-      height: 1.125vmax;
-      border-top-right-radius: 3vmax;
-      border-bottom-right-radius: 3vmax;
-      border-bottom-left-radius: 4.5vmax;
-      background-color: #000000;
-      /* Black nose */
-      animation: snout-b 10s cubic-bezier(0.3, 0.41, 0.18, 1.01) infinite;
-    }
-
-    .dog__nose {
-      position: absolute;
-      top: -1.95vmax;
-      left: 40%;
-      width: 0.75vmax;
-      height: 2.4vmax;
-      border-radius: 0.525vmax;
-      transform-origin: bottom;
-      transform: rotateZ(10deg);
-      background-color: #d7dbd2;
-    }
-
-    .dog__eye-l,
-    .dog__eye-r {
-      position: absolute;
-      top: -0.9vmax;
-      width: 0.675vmax;
-      height: 0.375vmax;
-      border-radius: 50%;
-      background-color: #000000;
-      /* Black eyes */
-      animation: eye 10s cubic-bezier(0.3, 0.41, 0.18, 1.01) infinite;
-    }
-
-    .dog__eye-l {
-      left: 27%;
-    }
-
-    .dog__eye-r {
-      left: 65%;
-    }
-
-    .dog__ear-l,
-    .dog__ear-r {
-      position: absolute;
-      width: 10.5vmax;
-      height: 3.375vmax;
-      border-top-left-radius: 0vmax;
-      border-top-right-radius: 0vmax;
-      border-bottom-right-radius: 3.3vmax;
-      border-bottom-left-radius: 3.3vmax;
-      background-color: #4d4d4d;
-      /* Dark gray for the ears */
-      background-image: linear-gradient(to bottom, #4d4d4d 50%, #b0b0b0 30%, #d1e8ff 20%);
-      /* Dark gray top, lighter gray middle, light blue bottom */
-    }
-
-    .dog__ear-l {
-      top: 1.5vmax;
-      left: 6vmax;
-      transform-origin: bottom left;
-      transform: rotateZ(-50deg);
-      z-index: -1;
-      animation: ear-l 10s cubic-bezier(0.3, 0.41, 0.18, 1.01) infinite;
-    }
-
-    .dog__ear-r {
-      top: 1.5vmax;
-      right: 3vmax;
-      transform-origin: bottom right;
-      transform: rotateZ(20deg);
-      z-index: -2;
-      animation: ear-r 10s cubic-bezier(0.3, 0.41, 0.18, 1.01) infinite;
-    }
-
-    .dog__body {
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-      position: absolute;
-      bottom: 0.3vmax;
-      left: 3.75vmax;
-      width: 18.75vmax;
-      height: 7.2vmax;
-      border-top-left-radius: 3vmax;
-      border-top-right-radius: 6vmax;
-      border-bottom-right-radius: 1.5vmax;
-      border-bottom-left-radius: 6vmax;
-      background-color: #b0b0b0;
-      /* Gray body */
-      background-image: linear-gradient(to bottom, #b0b0b0 40%, #ffffff 40%, #ffd1e8 20%);
-      /* Gray top, white middle, light pink bottom */
-      z-index: -2;
-      animation: body 10s cubic-bezier(0.3, 0.41, 0.18, 1.01) infinite;
-    }
-
-    .dog__tail {
-      position: absolute;
-      right: -3vmax;
-      height: 1.5vmax;
-      width: 4.5vmax;
-      background-color: #4d4d4d;
-      /* Dark gray tail */
-      background-image: linear-gradient(to bottom, #4d4d4d 50%, #b0b0b0 30%, #d1e8ff 20%);
-      /* Dark gray top, lighter gray middle, light blue bottom */
-      border-radius: 1.5vmax;
-    }
-
-    .dog__paws {
-      position: absolute;
-      bottom: 0;
-      left: 7.5vmax;
-      width: 12vmax;
-      height: 3vmax;
-    }
-
-    .dog__bl-leg {
-      left: -3vmax;
-      z-index: -10;
-    }
-
-    .dog__bl-paw::before {
-      background-color: #ffffff;
-      /* White paws */
-    }
-
-    .dog__bl-top {
-      background-image: linear-gradient(70deg, transparent 20%, #b0b0b0 20%, #ffd1e8 20%);
-      /* Gray with a hint of pink */
-    }
-
-    .dog__fl-leg {
-      z-index: 10;
-    }
-
-    .dog__fl-leg {
-      left: 0;
-    }
-
-    .dog__fl-paw::before {
-      background-color: #ffffff;
-      /* White paws */
-    }
-
-    .dog__fl-top {
-      background-image: linear-gradient(70deg, transparent 20%, #b0b0b0 20%, #ffd1e8 20%);
-      /* Gray with a hint of pink */
-    }
-
-    .dog__fr-leg {
-      right: 0;
-    }
-
-    .dog__fr-paw::before {
-      background-color: #ffffff;
-      /* White paws */
-    }
-
-    .dog__fr-top {
-      background-image: linear-gradient(70deg, transparent 20%, #b0b0b0 20%, #ffd1e8 20%);
-      /* Gray with a hint of pink */
-    }
-
-    /*==============================*/
-    @keyframes head {
-
-      0%,
-      10%,
-      20%,
-      26%,
-      28%,
-      90%,
-      100% {
-        height: 8.25vmax;
-        bottom: 0;
-        transform-origin: bottom right;
-        transform: rotateZ(0);
-      }
-
-      5%,
-      15%,
-      22%,
-      24%,
-      30% {
-        height: 8.1vmax;
-      }
-
-      32%,
-      50% {
-        height: 8.25vmax;
-      }
-
-      55%,
-      60% {
-        bottom: 0.75vmax;
-        transform-origin: bottom right;
-        transform: rotateZ(0);
-      }
-
-      70%,
-      80% {
-        bottom: 0.75vmax;
-        transform-origin: bottom right;
-        transform: rotateZ(10deg);
-      }
-    }
-
-    @keyframes body {
-
-      0%,
-      10%,
-      20%,
-      26%,
-      28%,
-      32%,
-      100% {
-        height: 7.2vmax;
-      }
-
-      5%,
-      15%,
-      22%,
-      24%,
-      30% {
-        height: 7.05vmax;
-      }
-    }
-
-    @keyframes ear-l {
-
-      0%,
-      10%,
-      20%,
-      26%,
-      28%,
-      82%,
-      100% {
-        transform: rotateZ(-50deg);
-      }
-
-      5%,
-      15%,
-      22%,
-      24% {
-        transform: rotateZ(-48deg);
-      }
-
-      30%,
-      31% {
-        transform: rotateZ(-30deg);
-      }
-
-      32%,
-      80% {
-        transform: rotateZ(-60deg);
-      }
-    }
-
-    @keyframes ear-r {
-
-      0%,
-      10%,
-      20%,
-      26%,
-      28% {
-        transform: rotateZ(20deg);
-      }
-
-      5%,
-      15%,
-      22%,
-      24% {
-        transform: rotateZ(18deg);
-      }
-
-      30%,
-      31% {
-        transform: rotateZ(10deg);
-      }
-
-      32% {
-        transform: rotateZ(25deg);
-      }
-    }
-
-    @keyframes snout {
-
-      0%,
-      10%,
-      20%,
-      26%,
-      28%,
-      82%,
-      100% {
-        height: 3.75vmax;
-      }
-
-      5%,
-      15%,
-      22%,
-      24% {
-        height: 3.45vmax;
-      }
-    }
-
-    @keyframes snout-b {
-
-      0%,
-      10%,
-      20%,
-      26%,
-      28%,
-      98%,
-      100% {
-        width: 1.875vmax;
-      }
-
-      5%,
-      15%,
-      22%,
-      24% {
-        width: 1.8vmax;
-      }
-
-      34%,
-      98% {
-        width: 1.275vmax;
-      }
-    }
-
-    @keyframes shadow {
-
-      0%,
-      10%,
-      20%,
-      26%,
-      28%,
-      30%,
-      84%,
-      100% {
-        width: 99%;
-      }
-
-      5%,
-      15%,
-      22%,
-      24% {
-        width: 101%;
-      }
-
-      34%,
-      81% {
-        width: 96%;
-      }
-    }
-
-    @keyframes eye {
-
-      0%,
-      30% {
-        width: 0.675vmax;
-        height: 0.3vmax;
-      }
-
-      32%,
-      59%,
-      90%,
-      100% {
-        width: 0.525vmax;
-        height: 0.525vmax;
-        transform: translateY(0);
-      }
-
-      60%,
-      75% {
-        transform: translateY(-0.3vmax);
-      }
-
-      80%,
-      85% {
-        transform: translateY(0.15vmax);
-      }
-    }
-
-    /* New Animation: Rotating Circle */
-    .ani.ani-7 {
-      position: absolute;
-      top: 20%;
-      left: 10%;
-      transform: scale(0.8);
-    }
-
-    .ani-circle {
-      width: 100px;
-      height: 100px;
-      border: 5px solid #3496d2;
-      border-radius: 50%;
-      animation: rotate-circle 10s linear infinite;
-    }
-
-    @keyframes rotate-circle {
-      0% {
-        transform: rotate(0deg);
-      }
-
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-
-    /* New Animation: Pulsating Triangle */
-    .ani.ani-8 {
-      position: absolute;
-      bottom: 15%;
-      right: 20%;
-      transform: scale(0.6);
-    }
-
-    .ani-triangle {
-      width: 0;
-      height: 0;
-      border-left: 50px solid transparent;
-      border-right: 50px solid transparent;
-      border-bottom: 100px solid #ff8b56;
-      animation: pulse-triangle 3s ease-in-out infinite;
-    }
-
-    @keyframes pulse-triangle {
-      0% {
-        transform: scale(1);
-        opacity: 1;
-      }
-
-      50% {
-        transform: scale(1.2);
-        opacity: 0.8;
-      }
-
-      100% {
-        transform: scale(1);
-        opacity: 1;
-      }
-    }
-
-    /* Flying Shapes Container */
-    .flying-shapes {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      pointer-events: none;
-    }
-
-    /* General Shape Styles */
-    .shape {
-      position: absolute;
-      animation: fly 15s linear infinite;
-      opacity: 0.8;
-    }
-
-    /* Circle */
-    .shape.circle {
-      width: 50px;
-      height: 50px;
-      background-color: rgba(52, 150, 210, 0.6);
-      border-radius: 50%;
-      animation-delay: 0s;
-    }
-
-    /* Square */
-    .shape.square {
-      width: 40px;
-      height: 40px;
-      background-color: rgba(111, 185, 232, 0.6);
-      animation-delay: 2s;
-    }
-
-    /* Triangle */
-    .shape.triangle {
-      width: 0;
-      height: 0;
-      border-left: 30px solid transparent;
-      border-right: 30px solid transparent;
-      border-bottom: 60px solid rgba(255, 139, 86, 0.6);
-      animation-delay: 4s;
-    }
-
-    /* Star */
-    .shape.star {
-      width: 0;
-      height: 0;
-      margin: 0 auto;
-      position: relative;
-      color: rgba(255, 215, 0, 0.6);
-      transform: scale(0.5);
-      animation-delay: 6s;
-    }
-
-    .shape.star:before,
-    .shape.star:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 0;
-      height: 0;
-      border-right: 30px solid transparent;
-      border-bottom: 20px solid rgba(255, 215, 0, 0.6);
-      border-left: 30px solid transparent;
-      transform: rotate(35deg);
-    }
-
-    .shape.star:after {
-      transform: rotate(-35deg);
-    }
-
-    /* Hexagon */
-    .shape.hexagon {
-      width: 60px;
-      height: 34.64px;
-      background-color: rgba(76, 172, 232, 0.6);
-      position: relative;
-      margin: 17.32px 0;
-      animation-delay: 8s;
-    }
-
-    .shape.hexagon:before,
-    .shape.hexagon:after {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 0;
-      border-left: 30px solid transparent;
-      border-right: 30px solid transparent;
-    }
-
-    .shape.hexagon:before {
-      bottom: 100%;
-      border-bottom: 17.32px solid rgba(76, 172, 232, 0.6);
-    }
-
-    .shape.hexagon:after {
-      top: 100%;
-      border-top: 17.32px solid rgba(76, 172, 232, 0.6);
-    }
-
-    /* Flying Animation */
-    @keyframes fly {
-      0% {
-        transform: translateY(100vh) translateX(0) rotate(0deg);
-      }
-
-      25% {
-        transform: translateY(75vh) translateX(25vw) rotate(90deg);
-      }
-
-      50% {
-        transform: translateY(50vh) translateX(50vw) rotate(180deg);
-      }
-
-      75% {
-        transform: translateY(25vh) translateX(75vw) rotate(270deg);
-      }
-
-      100% {
-        transform: translateY(0) translateX(100vw) rotate(360deg);
-      }
-    }
-
-    /* Updated Gradient for Grid Items */
-    .grid-item {
-      background: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 182, 193, 0.5), rgba(52, 150, 210, 0.5));
-      /* Transparent gradient */
-      padding: 6px;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      backdrop-filter: blur(3px);
-      /* Optional: Adds a subtle blur effect */
-    }
-
-    /* Updated Gradient for Other Sections */
-    .bg-gradient-to-r {
-      background: linear-gradient(to right, #ffffff, #ffb6c1, #3496d2);
-      /* White to pink to blue gradient */
-    }
-
-    /* Header and Navbar Styles */
-    header {
-      position: fixed;
-      /* Keeps the header fixed at the top */
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 1000;
-      /* Ensures the header stays above other elements */
-      background: linear-gradient(to right, #ffffff, #ffb6c1, #3496d2);
-      /* Matches the gradient theme */
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      /* Adds a subtle shadow */
-      padding: 0.5rem 1rem;
-      /* Reduces padding for a more compact header */
-    }
-
-    header h1 {
-      font-size: 1.5rem;
-      /* Adjust font size for responsiveness */
-    }
-
-    header nav {
-      display: flex;
-      flex-wrap: wrap;
-      /* Allows items to wrap on smaller screens */
-      justify-content: center;
-      /* Centers the navigation links */
-      gap: 1rem;
-      /* Adds spacing between links */
-    }
-
-    header nav a {
-      padding: 0.5rem 1rem;
-      background-color: #3496d2;
-      color: #ffffff;
-      border-radius: 0.5rem;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-    }
-
-    header nav a:hover {
-      background-color: #ffb6c1;
-      /* Changes color on hover */
-    }
-
-    /* Responsive Adjustments */
-    @media (max-width: 768px) {
-      header {
-        padding: 1rem;
-      }
-
-      header h1 {
-        font-size: 1.25rem;
-        /* Smaller font size for smaller screens */
-      }
-
-      header nav a {
-        padding: 0.5rem;
-        /* Adjust padding for smaller screens */
-      }
-    }
-
-    #about {
-      display: flex;
-      /* Enables flexbox for centering */
-      align-items: center;
-      /* Vertically centers the content */
-      justify-content: center;
-      /* Horizontally centers the content */
-      min-height: 40px;
-      /* Adjusts height to account for the fixed header */
-      padding: 2rem 0;
-      /* Reduces vertical padding */
-      background-color: rgba(255, 255, 255, 0.75);
-      /* White background with 75% transparency */
-      backdrop-filter: blur(5px);
-      /* Optional: Adds a subtle blur effect to the background */
-      text-align: center;
-      /* Ensures text is centered */
-    }
-
-    #about h2 {
-      font-size: 2.5rem;
-      /* Adjusts heading size */
-      font-weight: bold;
-      color: #333;
-      /* Dark gray for better contrast */
-      margin-bottom: 1rem;
-      /* Reduces spacing below the heading */
-    }
-
-    #about p {
-      font-size: 1.125rem;
-      /* Slightly larger font for readability */
-      line-height: 1.75;
-      /* Improves readability */
-      max-width: 800px;
-      /* Limits the width of the paragraph */
-      margin: 0 auto;
-      /* Centers the paragraph */
-    }
-
-    ul {
-      text-align: left;
-      /* Aligns the list items to the left */
-      margin-left: 1.5rem;
-      /* Adds some left margin for better spacing */
-      padding-left: 1rem;
-      /* Adds padding to the left for indentation */
-    }
-  </style>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-  <div class="bg-gradient-to-r from-white to-blue-300 h-1/2"></div>
-  <div class="bg-gradient-to-r from-blue-300 to-white h-1/2"></div>
-  <div class="bg-gradient-to-r from-white to-blue-300 h-1/2"></div>
-  <div class="bg-gradient-to-r from-blue-300 to-white h-1/2"></div>
-  <header class="w-full py-4 px-6 flex justify-between items-center">
-    <h1 class="text-xl font-bold text-black">Shubham Mukherjee</h1>
-    <!-- Hamburger Menu Button -->
-    <button id="menu-toggle" class="block md:hidden px-4 py-2 bg-blue-500 text-white rounded-lg">
-      <i class="fas fa-bars"></i>
-    </button>
-    <!-- Navigation Links -->
-    <nav id="menu" class="hidden md:flex space-x-4">
-      <a href="#about" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
-        <i class="fas fa-user"></i> About
-      </a>
-      <a href="#experience" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
-        <i class="fas fa-briefcase"></i> Experience
-      </a>
-      <a href="#projects" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
-        <i class="fas fa-tasks"></i> Projects
-      </a>
-      <a href="#education" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
-        <i class="fas fa-graduation-cap"></i> Education
-      </a>
-      <a href="#skills" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
-        <i class="fas fa-tools"></i> Skills
-      </a>
-    </nav>
-  </header>
-
-
-
-  <!-- Animations Section -->
-  <section class="animations">
-    <div class="animations-container">
-      <div class="ani ani-1">
-        <div class="ani-cube">
-          <div class="cube-face face_front"></div>
-          <div class="cube-face face_right"></div>
-          <div class="cube-face face_left"></div>
-          <div class="cube-face face_top"></div>
-          <div class="cube-face face_bottom"></div>
-          <div class="cube-face face_back"></div>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <a href="index.html">SM</a>
         </div>
-      </div>
-      <div class="ani ani-2">
-        <div class="ani-cube ani-cube-2">
-          <div class="cube-face face_front"></div>
-          <div class="cube-face face_right"></div>
-          <div class="cube-face face_left"></div>
-          <div class="cube-face face_top"></div>
-          <div class="cube-face face_bottom"></div>
-          <div class="cube-face face_back"></div>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+            <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-      </div>
-      <div class="ani ani-3">
-        <div class="ani-cube ani-cube-3">
-          <div class="cube-face face_front"></div>
-          <div class="cube-face face_right"></div>
-          <div class="cube-face face_left"></div>
-          <div class="cube-face face_top"></div>
-          <div class="cube-face face_bottom"></div>
-          <div class="cube-face face_back"></div>
-        </div>
-      </div>
-      <div class="ani ani-4">
-        <div class="ani-hamburger">
-          <div class="hamburger-line hamburger-line_top"></div>
-          <div class="hamburger-line hamburger-line_middle"></div>
-          <div class="hamburger-line hamburger-line_bottom"></div>
-        </div>
-      </div>
-      <div class="ani ani-5">
-        <div class="moving-square-frame"></div>
-        <div class="ani-moving-square"></div>
-      </div>
-      <div class="ani ani-6">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          viewBox="0 0 1024 1024">
-          <path id="followPath"
-            d="M394.1-214.9c-49.7,89.4,114.4,192.8,175.5,475.1c13,60.1,85.4,424-98.1,552.6 c-95.7,67-267.2,74.5-346.3-22.1c-70.8-86.5-49-233.9,19.2-305.2c102.4-107,353.9-89.1,593.2,96.5c139.6,107,294.1,258.4,415,468.6 c19.2,33.5,36.6,66.6,52.3,99.3c13,8.6,34,19.5,53.3,13.2c148-48.6,165.1-1094.5-338.5-1374.8C723.7-320.8,449-313.8,394.1-214.9z">
-          </path>
-          <path id="dashedPath"
-            d="M394.1-214.9c-49.7,89.4,114.4,192.8,175.5,475.1c13,60.1,85.4,424-98.1,552.6 c-95.7,67-267.2,74.5-346.3-22.1c-70.8-86.5-49-233.9,19.2-305.2c102.4-107,353.9-89.1,593.2,96.5c139.6,107,294.1,258.4,415,468.6 c19.2,33.5,36.6,66.6,52.3,99.3c13,8.6,34,19.5,53.3,13.2c148-48.6,165.1-1094.5-338.5-1374.8C723.7-320.8,449-313.8,394.1-214.9z">
-          </path>
-          <path id="airplain" d="M8.04 84L92 48 8.04 12 8 40l60 8-60 8z"></path>
-          <animateMotion xlink:href="#airplain" dur="6s" fill="freeze" repeatCount="indefinite" rotate="auto">
-            <mpath xlink:href="#followPath"></mpath>
-          </animateMotion>
-        </svg>
-      </div>
-      <!-- New animations -->
-      <div class="ani ani-7">
-        <div class="ani-circle"></div>
-      </div>
-      <div class="ani ani-8">
-        <div class="ani-triangle"></div>
-      </div>
-      <!-- New flying shapes -->
-      <div class="flying-shapes">
-        <div class="shape circle"></div>
-        <div class="shape square"></div>
-        <div class="shape triangle"></div>
-        <div class="shape star"></div>
-        <div class="shape hexagon"></div>
       </div>
     </div>
-    <!-- Main Section -->
+  </header>
 
-    <main class="flex-grow container mx-auto px-8 py-12">
-      <section id="about" class="flex items-center justify-center min-h-screen">
-        <div class="container mx-auto text-center">
-          <h2 class="text-3xl font-bold text-gray-800 mb-6" style="font-size: 2.5rem;">About Me</h2>
-          <p id="about-text" class="text-gray-700 text-lg max-w-3xl mx-auto leading-relaxed">
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-background">
+      <div class="hero-shape"></div>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            <span class="greeting">Hello, I'm</span>
+            <span class="name">Shubham Mukherjee</span>
+          </h1>
+          <h2 class="hero-subtitle">HR Professional</h2>
+          <p class="hero-description">
+            Specialized in employee service and support with expertise in HR systems and processes
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">Get in Touch</a>
+            <a href="#" class="btn btn-secondary">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-down">
+      <a href="#about">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section-header">
+        <h3 class="section-subtitle">About Me</h3>
+        <h2 class="section-title">Know Me Better</h2>
+      </div>
+      <div class="about-content">
+        <div class="about-image">
+          <div class="image-container">
+            <div class="image-bg"></div>
+          </div>
+          <div class="experience-badge">
+            <span>2+</span>
+            <p>Years of Experience</p>
+          </div>
+        </div>
+        <div class="about-text">
+          <p>
             Highly motivated and detail-oriented Associate with experience in employee service and support. Strong
             ability to multitask and prioritize tasks, with excellent communication, problem-solving, and data
-            management skills. Working experience with Panorama, ADP, SIM-Ticketing, Ivan-ti, Bright Pattern, Alight,
+            management skills.
+          </p>
+          <p>
+            Working experience with Panorama, ADP, SIM-Ticketing, Ivan-ti, Bright Pattern, Alight,
             People Portal, Salesforce, and other CRM software tools to resolve queries received from employees. Proven
             track record of consistently meeting or exceeding performance goals with integrity and discretion in dealing
             with sensitive information.
           </p>
-        </div>
-      </section>
-
-      <section id="experience" class="py-16">
-        <h2 style="font-size: 2.5rem;">Work Experience</h2>
-        <div class="mt-12 grid md:grid-cols-2 gap-8">
-          <div class="grid-item bg-gradient-to-r from-white via-pink-100 to-blue-200 p-6 rounded-lg shadow-lg">
-            <h3 class="text-xl font-semibold text-black">Specialist- HR Support - Randstad Offshore Services</h3>
-            <p class="text-gray-800">March 2024 - Current | Hyderabad</p>
-            <ul class="list-disc list-inside text-gray-700 mt-2">
-              <li>Managed employee benefit portals and tracking systems.</li>
-              <li>Resolved queries related to company policies and benefits.</li>
-              <li>Acted as a liaison between insurance carriers and employees.</li>
-            </ul>
-          </div>
-
-          <div class="grid-item bg-gradient-to-r from-white via-pink-100 to-blue-200 p-6 rounded-lg shadow-lg">
-            <h3 class="text-xl font-semibold text-black">HR Assistant L2 - Amazon Development Centre</h3>
-            <p class="text-gray-800">March 2022 - March 2024 | Remote</p>
-            <ul class="list-disc list-inside text-gray-700 mt-2">
-              <li>Managed HR software tools for North American employees.</li>
-              <li>Handled issues related to Attendance, Payroll, Benefits, and Employee Relations.</li>
-              <li>Provided support for the entire employee life cycle from hiring to exit.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" class="py-16" style="margin-top: 1rem; margin-bottom: 1rem;">
-        <h2 style="font-size: 2.5rem;">Projects</h2>
-        <div class="mt-12 grid md:grid-cols-1 gap-8">
-          <div class="grid-item bg-gradient-to-r from-white via-pink-100 to-blue-200 p-6 rounded-lg shadow-lg">
-            <h3 class="text-xl font-semibold text-black">Mentorship</h3>
-            <p class="text-gray-800">Became a part of the Mentors team, providing support and
-              guidance to the new hires and the associate onboarding, and
-              shifting to different teams, to get started with the ticketing process,
-              SLA requirements, SOP knowledge and employee satisfaction
-              practices in the Amazon. Achieve monthly performance targets,
-              including resolution rate, average handle time, and customer
-              satisfaction scores. Instituted quality control techniques to achieve
-              performance excellence among the new hires.</p>
-          </div>
-          <div class="grid-item bg-gradient-to-r from-white via-pink-100 to-blue-200 p-6 rounded-lg shadow-lg">
-            <h3 class="text-xl font-semibold text-black">WC Trainer</h3>
-            <p class="text-gray-800 text-base">Became a part of the Trainers team, providing support and
-              guidance to the new hired and tenured associate, on working with
-              WC ( Workers compensation document request) contacts, including
-              the 9 state forms such as FL, NY, NC, WA, TX etc as well as the wage
-              report retrieval and blurb creation process.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="education" class="py-16" style="margin-top: 1rem; margin-bottom: 1rem;">
-        <h2 style="font-size: 2.5rem; top: 1rem;">Education</h2>
-        <div class="mt-12 grid md:grid-cols-4 gap-8">
-          <div class="grid-item bg-gradient-to-r from-white via-pink-100 to-blue-200 p-6 rounded-lg shadow-lg">
-            <h3 class="text-xl font-semibold text-black">Bachelors | Computer App.</h3>
-            <p class="text-gray-800">Monad University | December 2024</p>
-          </div>
-
-          <div class="grid-item bg-gradient-to-r from-white via-pink-100 to-blue-200 p-6 rounded-lg shadow-lg">
-            <h3 class="text-xl font-semibold text-black">Bachelors | English Hon's</h3>
-            <p class="text-gray-800">Delhi University | December 2020</p>
-          </div>
-
-          <div class="grid-item bg-gradient-to-r from-white via-pink-100 to-blue-200 p-6 rounded-lg shadow-lg">
-            <h3 class="text-xl font-semibold text-black">Diploma | Cloud & software</h3>
-            <p class="text-gray-800">NIIT | April 2019</p>
-          </div>
-
-          <div class="grid-item bg-gradient-to-r from-white via-pink-100 to-blue-200 p-6 rounded-lg shadow-lg">
-            <h3 class="text-xl font-semibold text-black">Higher Secondary | Commerce</h3>
-            <p class="text-gray-800">Raisina Bengali Sr. Sec School | March 2015</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="skills" class="py-16">
-        <h2 style="font-size: 2.5rem;">Skills</h2>
-        <div class="mt-12 grid md:grid-cols-4 gap-8">
-          <div class="grid-item bg-gradient-to-r from-white via-pink-100 to-blue-200 p-6 rounded-lg shadow-lg">
-            <ul class="list-disc list-inside text-gray-700 mt-6 text-lg max-w-2xl mx-auto">
-              <li>Employee Hire to Retire and Employee life cycle</li>
-              <li>Able to work under stressful conditions meeting with deadlines.</li>
-              <li>Excellent verbal as well as written communication skills.</li>
-            </ul>
-          </div>
-          <div class="grid-item bg-gradient-to-r from-white via-pink-100 to-blue-200 p-6 rounded-lg shadow-lg">
-            <ul class="list-disc list-inside text-gray-700 mt-6 text-lg max-w-2xl mx-auto">
-              <li>Employee Hire to Retire and Employee life cycle</li>
-              <li>Able to work under stressful conditions meeting with deadlines.</li>
-              <li>Excellent verbal as well as written communication skills.</li>
-            </ul>
-          </div>
-          <div class="grid-item bg-gradient-to-r from-white via-pink-100 to-blue-200 p-6 rounded-lg shadow-lg">
-            <ul class="list-disc list-inside text-gray-700 mt-6 text-lg max-w-2xl mx-auto">
-              <li>Able to work in a team environment</li>
-              <li>Willingness to stretch if required with a very flexible and a can-do attitude.</li>
-              <li>Analytical Skills to determine logical flow of activities.</li>
-            </ul>
-          </div>
-          <div class="grid-item bg-gradient-to-r from-white via-pink-100 to-blue-200 p-6 rounded-lg shadow-lg">
-            <ul class="list-disc list-inside text-gray-700 mt-6 text-lg max-w-2xl mx-auto">
-              <li>Able to work in a team environment</li>
-              <li>Willingness to stretch if required with a very flexible and a can-do attitude.</li>
-              <li>Analytical Skills to determine logical flow of activities.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section id="hr-applications" class="py-16">
-        <h2 style="font-size: 2.5rem;">Experience in HR Applications</h2>
-        <div class="mt-12 grid md:grid-cols-2 gap-8">
-          <div class="grid-item bg-gradient-to-r from-white via-pink-100 to-blue-200 p-6 rounded-lg shadow-lg">
-            <h3 class="text-xl font-semibold text-black">Panorama</h3>
-            <p class="text-gray-800">Extensive experience in using Panorama for managing employee data, tracking
-              performance, and generating reports.</p>
-          </div>
-          <div class="grid-item bg-gradient-to-r from-white via-pink-100 to-blue-200 p-6 rounded-lg shadow-lg">
-            <h3 class="text-xl font-semibold text-black">ADP</h3>
-            <p class="text-gray-800">Proficient in handling payroll, benefits, and compliance tasks using ADP Portal.
-            </p>
-          </div>
-          <div class="grid-item bg-gradient-to-r from-white via-pink-100 to-blue-200 p-6 rounded-lg shadow-lg">
-            <h3 class="text-xl font-semibold text-black">Salesforce</h3>
-            <p class="text-gray-800">Skilled in utilizing Salesforce for managing employee relations and resolving HR
-              queries efficiently.</p>
-          </div>
-          <div class="grid-item bg-gradient-to-r from-white via-pink-100 to-blue-200 p-6 rounded-lg shadow-lg">
-            <h3 class="text-xl font-semibold text-black">Bright Pattern</h3>
-            <p class="text-gray-800">Experienced in using Bright Pattern for streamlining communication and improving
-              employee satisfaction.</p>
-          </div>
-        </div>
-        <div class="mt-12 grid md:grid-cols-1 gap-8">
-
-          <div class="grid-item bg-gradient-to-r from-white via-pink-100 to-blue-200 p-6 rounded-lg shadow-lg">
-            <h3 class="text-xl font-semibold text-black">WorkDay</h3>
-            <p class="text-gray-800">Hands-on experience with WorkDay for managing employee records, payroll, benefits,
-              and performance reviews. Proficient in leveraging its analytics and reporting features to drive HR
-              decisions.</p>
-          </div>
-
-
-          <!-- New Section for Other HR Applications -->
-          <div class="grid-item bg-gradient-to-r from-white via-pink-100 to-blue-200 p-6 rounded-lg shadow-lg">
-            <h3 class="text-xl font-semibold text-black">Other HR Applications</h3>
-            <ul
-              class="flex flex-wrap justify-center gap-4 text-gray-800 mt-4 text-rendering: optimizeLegibility; text-align: center">
-              <li class="bg-white px-4 py-2 rounded-lg shadow-md"><b>PeopleSoft (People Portal)</b></li>
-              <li class="bg-white px-4 py-2 rounded-lg shadow-md"><b>Towers Watson – Benefits</b></li>
-              <li class="bg-white px-4 py-2 rounded-lg shadow-md"><b>Work Number – Employment Verification</b></li>
-              <li class="bg-white px-4 py-2 rounded-lg shadow-md"><b>Trouble Ticketing</b></li>
-              <li class="bg-white px-4 py-2 rounded-lg shadow-md"><b>Amazon SIM Ticketing</b></li>
-              <li class="bg-white px-4 py-2 rounded-lg shadow-md"><b>Kronos Workforce Central</b></li>
-              <li class="bg-white px-4 py-2 rounded-lg shadow-md"><b>Hyland Unity Client [Amazon]</b></li>
-            </ul>
-          </div>
-        </div>
-
-      </section>
-    </main>
-
-    <div class="main">
-      <div class="dog">
-        <div class="dog__paws">
-          <div class="dog__bl-leg leg">
-            <div class="dog__bl-paw paw"></div>
-            <div class="dog__bl-top top"></div>
-          </div>
-          <div class="dog__fl-leg leg">
-            <div class="dog__fl-paw paw"></div>
-            <div class="dog__fl-top top"></div>
-          </div>
-          <div class="dog__fr-leg leg">
-            <div class="dog__fr-paw paw"></div>
-            <div class="dog__fr-top top"></div>
-          </div>
-        </div>
-        <div class="dog__body">
-          <div class="dog__tail"></div>
-        </div>
-        <div class="dog__head">
-          <div class="dog__snout">
-            <div class="dog__nose"></div>
-            <div class="dog__eyes">
-              <div class="dog__eye-l"></div>
-              <div class="dog__eye-r"></div>
+          <div class="about-info">
+            <div class="info-item">
+              <h4>Name:</h4>
+              <p>Shubham Mukherjee</p>
+            </div>
+            <div class="info-item">
+              <h4>Email:</h4>
+              <p>shubhammukherjee490@gmail.com</p>
+            </div>
+            <div class="info-item">
+              <h4>Phone:</h4>
+              <p>+91 9958893975</p>
+            </div>
+            <div class="info-item">
+              <h4>Location:</h4>
+              <p>Hyderabad, India</p>
             </div>
           </div>
-        </div>
-        <div class="dog__head-c">
-          <div class="dog__ear-l"></div>
-          <div class="dog__ear-r"></div>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+          </div>
         </div>
       </div>
     </div>
-
   </section>
 
-  <footer class="w-full bg-gradient-to-r from-white to-blue-300 py-6 text-center text-gray-800">
-    <p>&copy; 2025 Shubham Mukherjee. All rights reserved.</p>
-    <div class="mt-4">
-      <a href="https://www.linkedin.com/in/yourprofile"
-        class="px-4 py-2 bg-blue-500 text-white rounded-lg mx-2 hover:bg-blue-600">
-        <i class="fab fa-linkedin"></i> LinkedIn
-      </a>
-      <a href="https://wa.me/yourwhatsappnumber"
-        class="px-4 py-2 bg-green-500 text-white rounded-lg mx-2 hover:bg-green-600">
-        <i class="fab fa-whatsapp"></i> WhatsApp
-      </a>
-      <a href="resume.pdf" download class="px-4 py-2 bg-gray-700 text-white rounded-lg mx-2 hover:bg-gray-800">
-        <i class="fas fa-download"></i> Resume
-      </a>
-      <!-- Email Button -->
-      <a href="mailto:shubhammukherjee490@gmail.com"
-        class="px-4 py-2 bg-red-500 text-white rounded-lg mx-2 hover:bg-red-600">
-        <i class="fas fa-envelope"></i> Email
-      </a>
-      <!-- Phone Button -->
-      <a href="tel:+919958893975"
-        class="px-4 py-2 bg-blue-700 text-white rounded-lg mx-2 hover:bg-blue-800">
-        <i class="fas fa-phone"></i> Call
-      </a>
+  <!-- Experience Section -->
+  <section id="experience" class="experience section">
+    <div class="container">
+      <div class="section-header">
+        <h3 class="section-subtitle">My Journey</h3>
+        <h2 class="section-title">Work Experience</h2>
+      </div>
+      <div class="experience-timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Specialist- HR Support</h3>
+              <span class="company">Randstad Offshore Services</span>
+            </div>
+            <div class="timeline-date">
+              <span>March 2024 - Current</span>
+              <span class="location">Hyderabad</span>
+            </div>
+            <div class="timeline-description">
+              <ul>
+                <li>Managed employee benefit portals and tracking systems.</li>
+                <li>Resolved queries related to company policies and benefits.</li>
+                <li>Acted as a liaison between insurance carriers and employees.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>HR Assistant L2</h3>
+              <span class="company">Amazon Development Centre</span>
+            </div>
+            <div class="timeline-date">
+              <span>March 2022 - March 2024</span>
+              <span class="location">Remote</span>
+            </div>
+            <div class="timeline-description">
+              <ul>
+                <li>Managed HR software tools for North American employees.</li>
+                <li>Handled issues related to Attendance, Payroll, Benefits, and Employee Relations.</li>
+                <li>Provided support for the entire employee life cycle from hiring to exit.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <div class="section-header">
+        <h3 class="section-subtitle">My Work</h3>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="projects-container">
+        <div class="project-card">
+          <div class="project-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3 class="project-title">Mentorship</h3>
+          <p class="project-description">
+            Became a part of the Mentors team, providing support and
+            guidance to the new hires and the associate onboarding, and
+            shifting to different teams, to get started with the ticketing process,
+            SLA requirements, SOP knowledge and employee satisfaction
+            practices in the Amazon. Achieve monthly performance targets,
+            including resolution rate, average handle time, and customer
+            satisfaction scores. Instituted quality control techniques to achieve
+            performance excellence among the new hires.
+          </p>
+        </div>
+        <div class="project-card">
+          <div class="project-icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <h3 class="project-title">WC Trainer</h3>
+          <p class="project-description">
+            Became a part of the Trainers team, providing support and
+            guidance to the new hired and tenured associate, on working with
+            WC (Workers compensation document request) contacts, including
+            the 9 state forms such as FL, NY, NC, WA, TX etc as well as the wage
+            report retrieval and blurb creation process.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="education section">
+    <div class="container">
+      <div class="section-header">
+        <h3 class="section-subtitle">My Background</h3>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="education-container">
+        <div class="education-card">
+          <div class="education-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <div class="education-content">
+            <h3>Bachelors | Computer App.</h3>
+            <p class="institution">Monad University</p>
+            <p class="year">December 2024</p>
+          </div>
+        </div>
+        <div class="education-card">
+          <div class="education-icon">
+            <i class="fas fa-book"></i>
+          </div>
+          <div class="education-content">
+            <h3>Bachelors | English Hon's</h3>
+            <p class="institution">Delhi University</p>
+            <p class="year">December 2020</p>
+          </div>
+        </div>
+        <div class="education-card">
+          <div class="education-icon">
+            <i class="fas fa-cloud"></i>
+          </div>
+          <div class="education-content">
+            <h3>Diploma | Cloud & software</h3>
+            <p class="institution">NIIT</p>
+            <p class="year">April 2019</p>
+          </div>
+        </div>
+        <div class="education-card">
+          <div class="education-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="education-content">
+            <h3>Higher Secondary | Commerce</h3>
+            <p class="institution">Raisina Bengali Sr. Sec School</p>
+            <p class="year">March 2015</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <div class="section-header">
+        <h3 class="section-subtitle">My Expertise</h3>
+        <h2 class="section-title">Skills</h2>
+      </div>
+      <div class="skills-container">
+        <div class="skills-group">
+          <h3 class="skills-group-title">Professional Skills</h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <h4>Employee Hire to Retire and Employee life cycle</h4>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <h4>Working under stressful conditions meeting deadlines</h4>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <h4>Verbal and written communication skills</h4>
+                <span>95%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 95%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <h4>Team environment collaboration</h4>
+                <span>92%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 92%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <h4>Analytical Skills for logical flow of activities</h4>
+                <span>88%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 88%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hr-applications">
+          <h3 class="skills-group-title">Experience in HR Applications</h3>
+          <div class="applications-grid">
+            <div class="application-item">
+              <div class="application-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <h4>Panorama</h4>
+              <p>Employee data management</p>
+            </div>
+            <div class="application-item">
+              <div class="application-icon">
+                <i class="fas fa-money-check-alt"></i>
+              </div>
+              <h4>ADP</h4>
+              <p>Payroll & benefits</p>
+            </div>
+            <div class="application-item">
+              <div class="application-icon">
+                <i class="fas fa-cloud"></i>
+              </div>
+              <h4>Salesforce</h4>
+              <p>Employee relations</p>
+            </div>
+            <div class="application-item">
+              <div class="application-icon">
+                <i class="fas fa-headset"></i>
+              </div>
+              <h4>Bright Pattern</h4>
+              <p>Communication</p>
+            </div>
+            <div class="application-item">
+              <div class="application-icon">
+                <i class="fas fa-calendar-alt"></i>
+              </div>
+              <h4>WorkDay</h4>
+              <p>HR management</p>
+            </div>
+          </div>
+
+          <div class="other-applications">
+            <h4>Other HR Applications</h4>
+            <div class="tags">
+              <span class="tag">PeopleSoft (People Portal)</span>
+              <span class="tag">Towers Watson – Benefits</span>
+              <span class="tag">Work Number – Employment Verification</span>
+              <span class="tag">Trouble Ticketing</span>
+              <span class="tag">Amazon SIM Ticketing</span>
+              <span class="tag">Kronos Workforce Central</span>
+              <span class="tag">Hyland Unity Client [Amazon]</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-header">
+        <h3 class="section-subtitle">Get In Touch</h3>
+        <h2 class="section-title">Contact Me</h2>
+      </div>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-text">
+              <h3>Location</h3>
+              <p>Hyderabad, India</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-text">
+              <h3>Email</h3>
+              <p><a href="mailto:shubhammukherjee490@gmail.com">shubhammukherjee490@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-text">
+              <h3>Phone</h3>
+              <p><a href="tel:+919958893975">+91 9958893975</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder=" " required>
+              <span class="focus-border"></span>
+              <label for="name">Your Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder=" " required>
+              <span class="focus-border"></span>
+              <label for="email">Your Email</label>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" name="subject" placeholder=" " required>
+              <span class="focus-border"></span>
+              <label for="subject">Subject</label>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" placeholder=" " required></textarea>
+              <span class="focus-border"></span>
+              <label for="message">Your Message</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>Shubham Mukherjee</h2>
+          <p>HR Professional</p>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/yourprofile" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://wa.me/919958893975" class="social-link"><i class="fab fa-whatsapp"></i></a>
+          <a href="mailto:shubhammukherjee490@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+          <a href="tel:+919958893975" class="social-link"><i class="fas fa-phone"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Shubham Mukherjee. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      // Animate the "About Me" paragraph
-      gsap.from("#about-text", {
-        opacity: 0, // Start with 0 opacity
-        y: 20, // Start slightly below its original position
-        duration: 1.5, // Animation duration
-        ease: "power2.out", // Smooth easing
-      });
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </a>
 
-      // Animate all h2 elements
-      gsap.from("h2", {
-        opacity: 0, // Start with 0 opacity
-        y: -20, // Start slightly above its original position
-        duration: 1, // Animation duration
-        ease: "power2.out", // Smooth easing
-        stagger: 0.2, // Stagger animation for multiple h2 elements
-      });
-
-      // Animate all grid items
-      gsap.from(".grid-item", {
-        opacity: 0, // Start with 0 opacity
-        y: 30, // Start slightly below its original position
-        duration: 1, // Animation duration
-        ease: "power2.out", // Smooth easing
-        stagger: 0.3, // Stagger animation for grid items
-      });
-    });
-  </script>
-  <script>
-    document.getElementById("menu-toggle").addEventListener("click", function () {
-      const menu = document.getElementById("menu");
-      menu.classList.toggle("hidden");
-    });
-  </script>
-
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+</body>
 </html>
-<!-- Add your original background image URL in the CSS above -->
